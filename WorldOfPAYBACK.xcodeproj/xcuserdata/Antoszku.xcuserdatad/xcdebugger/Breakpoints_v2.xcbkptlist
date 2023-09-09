@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A861D137-100A-43EE-84B6-54773FA47FBF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAF2ED84-991D-40DD-A9B4-1FB55E9F0238"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WorldOfPAYBACK/Networking/Client/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "sendRequest(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAF2ED84-991D-40DD-A9B4-1FB55E9F0238 - 8175c1f2db3e2d9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "DAF2ED84-991D-40DD-A9B4-1FB55E9F0238 - 8175c1f2db3e2c71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "DAF2ED84-991D-40DD-A9B4-1FB55E9F0238 - 8175c1f2db3e2c50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDAA137C-793F-4565-A218-0C97C662B008"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WorldOfPAYBACK/Networking/Client/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "sendRequest(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDAA137C-793F-4565-A218-0C97C662B008 - d21d4161bc3ce1d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1908">
+               </Location>
+               <Location
+                  uuid = "DDAA137C-793F-4565-A218-0C97C662B008 - d21d4161bc3ce13f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "2416">
+               </Location>
+               <Location
+                  uuid = "DDAA137C-793F-4565-A218-0C97C662B008 - d21d4161bc3ce13f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "2412">
+               </Location>
+               <Location
+                  uuid = "DDAA137C-793F-4565-A218-0C97C662B008 - d21d4161bc3ce11e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for WorldOfPAYBACK.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(WorldOfPAYBACK.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/WorldOfPAYBACK/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83870D2C-5279-4735-9010-F072EEA46228"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WorldOfPAYBACK/UI/Transactions/TransactionsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "onFilterTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14FBAD8C-ADAB-405C-AB96-570B0DB44E94"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infrastructure/Sources/TransactionsService/Networking/Client/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "sendRequest(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "14FBAD8C-ADAB-405C-AB96-570B0DB44E94 - 81ebeb7b412acd05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TransactionsService.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(TransactionsService.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Infrastructure/Sources/TransactionsService/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "14FBAD8C-ADAB-405C-AB96-570B0DB44E94 - ff0d42a489011107"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TransactionsService.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(TransactionsService.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Infrastructure/Sources/TransactionsService/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "14FBAD8C-ADAB-405C-AB96-570B0DB44E94 - 8a63ed092cf53300"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TransactionsService.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(TransactionsService.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Infrastructure/Sources/TransactionsService/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "14FBAD8C-ADAB-405C-AB96-570B0DB44E94 - 81ebeb7b412acd05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TransactionsService.DefaultAPIClient.sendRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(TransactionsService.Request) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Infrastructure/Sources/TransactionsService/Networking/Client/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

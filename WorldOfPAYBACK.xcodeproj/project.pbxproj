@@ -11,9 +11,7 @@
 		DB172EE82AABBD2300827026 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB172EE72AABBD2300827026 /* ContentView.swift */; };
 		DB172EEA2AABBD2500827026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB172EE92AABBD2500827026 /* Assets.xcassets */; };
 		DB172EEE2AABBD2500827026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB172EED2AABBD2500827026 /* Preview Assets.xcassets */; };
-		DB172EF82AABBD2500827026 /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB172EF72AABBD2500827026 /* WorldOfPAYBACKTests.swift */; };
-		DB172F022AABBD2500827026 /* WorldOfPAYBACKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB172F012AABBD2500827026 /* WorldOfPAYBACKUITests.swift */; };
-		DB172F042AABBD2500827026 /* WorldOfPAYBACKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB172F032AABBD2500827026 /* WorldOfPAYBACKUITestsLaunchTests.swift */; };
+		DB786E0E2AACA592009B3E85 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = DB786E0D2AACA592009B3E85 /* App */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +39,11 @@
 		DB172EEB2AABBD2500827026 /* WorldOfPAYBACK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldOfPAYBACK.entitlements; sourceTree = "<group>"; };
 		DB172EED2AABBD2500827026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB172EF32AABBD2500827026 /* WorldOfPAYBACKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB172EF72AABBD2500827026 /* WorldOfPAYBACKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKTests.swift; sourceTree = "<group>"; };
 		DB172EFD2AABBD2500827026 /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB172F012AABBD2500827026 /* WorldOfPAYBACKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITests.swift; sourceTree = "<group>"; };
-		DB172F032AABBD2500827026 /* WorldOfPAYBACKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB786E032AAC9AEC009B3E85 /* Infrastructure */ = {isa = PBXFileReference; lastKnownFileType = text; path = Infrastructure; sourceTree = SOURCE_ROOT; };
+		DB786E052AACA35C009B3E85 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; path = Networking; sourceTree = SOURCE_ROOT; };
+		DB786E0B2AACA3A4009B3E85 /* App */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = App; sourceTree = "<group>"; };
+		DBCE7B082AACD4180038CAE8 /* DI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB786E0E2AACA592009B3E85 /* App in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +75,8 @@
 		DB172ED92AABBD2300827026 = {
 			isa = PBXGroup;
 			children = (
+				DB786E0A2AACA3A4009B3E85 /* Packages */,
 				DB172EE42AABBD2300827026 /* WorldOfPAYBACK */,
-				DB172EF62AABBD2500827026 /* WorldOfPAYBACKTests */,
-				DB172F002AABBD2500827026 /* WorldOfPAYBACKUITests */,
 				DB172EE32AABBD2300827026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +94,7 @@
 		DB172EE42AABBD2300827026 /* WorldOfPAYBACK */ = {
 			isa = PBXGroup;
 			children = (
+				DB172F2B2AABC1D400827026 /* Infrastructure */,
 				DB172EE52AABBD2300827026 /* WorldOfPAYBACKApp.swift */,
 				DB172EE72AABBD2300827026 /* ContentView.swift */,
 				DB172EE92AABBD2500827026 /* Assets.xcassets */,
@@ -112,21 +112,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DB172EF62AABBD2500827026 /* WorldOfPAYBACKTests */ = {
+		DB172F2B2AABC1D400827026 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				DB172EF72AABBD2500827026 /* WorldOfPAYBACKTests.swift */,
 			);
-			path = WorldOfPAYBACKTests;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		DB172F002AABBD2500827026 /* WorldOfPAYBACKUITests */ = {
+		DB786E0A2AACA3A4009B3E85 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				DB172F012AABBD2500827026 /* WorldOfPAYBACKUITests.swift */,
-				DB172F032AABBD2500827026 /* WorldOfPAYBACKUITestsLaunchTests.swift */,
+				DB786E032AAC9AEC009B3E85 /* Infrastructure */,
+				DB786E052AACA35C009B3E85 /* Networking */,
+				DB786E0B2AACA3A4009B3E85 /* App */,
+				DBCE7B082AACD4180038CAE8 /* DI */,
 			);
-			path = WorldOfPAYBACKUITests;
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +146,9 @@
 			dependencies = (
 			);
 			name = WorldOfPAYBACK;
+			packageProductDependencies = (
+				DB786E0D2AACA592009B3E85 /* App */,
+			);
 			productName = WorldOfPAYBACK;
 			productReference = DB172EE22AABBD2300827026 /* WorldOfPAYBACK.app */;
 			productType = "com.apple.product-type.application";
@@ -268,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB172EF82AABBD2500827026 /* WorldOfPAYBACKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB172F042AABBD2500827026 /* WorldOfPAYBACKUITestsLaunchTests.swift in Sources */,
-				DB172F022AABBD2500827026 /* WorldOfPAYBACKUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +605,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB786E0D2AACA592009B3E85 /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB172EDA2AABBD2300827026 /* Project object */;
 }
