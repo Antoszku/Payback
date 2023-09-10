@@ -82,7 +82,6 @@
 				DB786E0A2AACA3A4009B3E85 /* Packages */,
 				DB172EE42AABBD2300827026 /* WorldOfPAYBACK */,
 				DB172EE32AABBD2300827026 /* Products */,
-				DB6375442AAE3E0C0069CD2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,20 +115,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DB6375442AAE3E0C0069CD2B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DB786E0A2AACA3A4009B3E85 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				DB0ACCB92AAE46B600561635 /* App */,
 				DBCE7B082AACD4180038CAE8 /* DI */,
 				DB8B377B2AAE397500CC5131 /* Domain */,
 				DB786E052AACA35C009B3E85 /* Networking */,
-				DB0ACCB92AAE46B600561635 /* App */,
 			);
 			name = Packages;
 			sourceTree = "<group>";

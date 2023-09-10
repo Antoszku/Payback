@@ -6,12 +6,12 @@ let package = Package(
     name: "Domain",
     platforms: [.iOS(.v16)],
     products: [
-        .library(name: AppTarget.Domain.rawValue, targets: [AppTarget.Domain.rawValue]),
-        .library(name: AppTarget.TransactionsService.rawValue, targets: [AppTarget.TransactionsService.rawValue]),
+        .library(target: .Domain),
+        .library(target: .TransactionsService)
     ],
     dependencies: [
-        .package(name: "Networking", path: "../Networking"),
-        .package(name: "DI", path: "../DI"),
+        .package(.Networking),
+        .package(.DI)
     ],
     targets: [
         .target(name: .Domain, dependencies: [.Networking, .Resolver, .TransactionsService]),
@@ -19,48 +19,81 @@ let package = Package(
     ]
 )
 
+
+enum Targets: String {
+    case Domain
+    case TransactionsService
+}
+
+enum Dependencies: String {
+    
+    // Domain
+    case TransactionsService
+    case Networking
+    
+    // DI
+    case Resolver
+    
+    func dependency() -> Target.Dependency {
+        switch self {
+            // Domain
+        case .TransactionsService, .Networking:
+            return Target.Dependency(self)
+            // DI
+        case .Resolver:
+            return Target.Dependency(self, package: .DI)
+        }
+    }
+}
+
+enum Packages: String {
+    case DI
+    case Networking
+}
+
 extension Target {
-    static func target(name: AppTarget,
-                       dependencies: [DomainDependency] = [],
-                       resources: [Resource]? = nil) -> Target
-    {
+    static func target(name: Targets,
+                       dependencies: [Dependencies] = [],
+                       resources: [Resource]? = nil) -> Target {
         .target(name: name.rawValue,
                 dependencies: dependencies.map { $0.dependency() },
                 path: "Sources/\(name)",
                 resources: resources)
     }
+    
+    static func testTarget(name: Targets,
+                           dependencies: [Dependencies] = [],
+                           resources: [Resource]? = nil) -> Target
+    {
+        .testTarget(name: name.rawValue,
+                    dependencies: dependencies.map { $0.dependency() },
+                    path: "Tests/\(name)",
+                    resources: resources)
+    }
 }
 
 extension Target.Dependency {
-    init(_ target: DomainDependency) {
+    init(_ target: Dependencies) {
         self.init(stringLiteral: target.rawValue)
     }
-
-    init(_ target: DomainDependency, package: String) {
-        self = Target.Dependency.product(name: target.rawValue, package: package)
+    
+    init(_ target: Dependencies, package: Packages) {
+        self = Self.product(name: target.rawValue, package: package.rawValue)
     }
 }
 
-enum AppTarget: String {
-    case Domain
-
-    case TransactionsService
+extension Product {
+    static func library(target: Targets) -> PackageDescription.Product {
+        library(name: target.rawValue, targets: [target.rawValue])
+    }
+    
+    static func library(target: Targets, targets: [Targets]) -> PackageDescription.Product {
+        library(name: target.rawValue, targets: targets.map { $0.rawValue })
+    }
 }
 
-enum DomainDependency: String {
-    // Domain
-    case TransactionsService
-    case Networking
-    case Resolver
-
-    func dependency() -> Target.Dependency {
-        switch self {
-        // Domain
-        case .TransactionsService, .Networking:
-            return Target.Dependency(self)
-
-        case .Resolver:
-            return Target.Dependency(self, package: "DI")
-        }
+extension Package.Dependency {
+    static func package(_ package: Packages) -> Package.Dependency {
+        Self.package(name: package.rawValue, path: "../\(package.rawValue)")
     }
 }

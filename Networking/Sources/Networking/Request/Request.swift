@@ -5,8 +5,7 @@ public struct Request {
     let method: HTTPMethod
 
     public init(url: String,
-                method: HTTPMethod)
-    {
+                method: HTTPMethod) {
         self.url = url
         self.method = method
     }
