@@ -1,10 +1,11 @@
 import Foundation
 import TransactionsService
 
-public final class TransactionsViewModel: ObservableObject {
+final class TransactionsViewModel: ObservableObject {
     enum State {
         case loading
         case transactions([TransactionPresentable])
+        case error
     }
 
     private let interactor: TransactionsInteractor
@@ -36,6 +37,12 @@ public final class TransactionsViewModel: ObservableObject {
         totalAmount = transactionsTemp.map { $0.amount }.reduce(0, +)
         state = .transactions(transactionsTemp)
     }
+    
+    func reload() async {
+        await set(state: .loading)
+        await try? Task.sleep(nanoseconds: 1_000_000_000)
+        await set(state: .transactions(transactions))
+    }
 
     @MainActor
     private func set(state: State) {
@@ -51,49 +58,5 @@ public final class TransactionsViewModel: ObservableObject {
     @MainActor
     private func set(categories: Set<Int>) {
         self.categories = Array(categories)
-    }
-}
-
-protocol TransactionsInteractor {
-    func getTransactions() async throws -> [TransactionPresentable]
-}
-
-final class DefaultTransactionsInteractor: TransactionsInteractor {
-    private let service: TransactionsService
-
-    init(service: TransactionsService) {
-        self.service = service
-    }
-
-    func getTransactions() async throws -> [TransactionPresentable] {
-        let transactionsDTO = try await service.getTransactions()
-        return transactionsDTO.map { .init(dto: $0) }
-    }
-}
-
-import TransactionsService
-
-struct TransactionPresentable: Identifiable, Hashable {
-    let id: String
-    let bookingDate: Date
-    let category: Int
-    let bookingDateDescription: String
-    let partnerDisplayName: String
-    let transactionDetailDescription: String?
-    let amount: Int
-    let currency: String
-
-    init(dto: TransactionDTO) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm d MMM yyyy"
-        bookingDateDescription = dateFormatter.string(from: dto.transactionDetail.bookingDate)
-
-        id = dto.alias.reference
-        bookingDate = dto.transactionDetail.bookingDate
-        category = dto.category
-        partnerDisplayName = dto.partnerDisplayName
-        transactionDetailDescription = dto.transactionDetail.description
-        amount = dto.transactionDetail.value.amount
-        currency = dto.transactionDetail.value.currency
     }
 }

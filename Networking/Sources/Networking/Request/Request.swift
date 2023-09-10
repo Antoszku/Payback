@@ -1,5 +1,3 @@
-import Foundation
-
 public struct Request {
     let url: String
     let method: HTTPMethod

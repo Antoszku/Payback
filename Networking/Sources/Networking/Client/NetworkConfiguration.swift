@@ -1,4 +1,9 @@
-struct NetworkConfiguration {
+protocol NetworkConfiguration {
+    var scheme: String { get }
+    var host: String { get }
+}
+
+struct ProductionNetworkConfiguration: NetworkConfiguration {
     let scheme: String
     let host: String
 
@@ -6,9 +11,14 @@ struct NetworkConfiguration {
         scheme = "https"
         host = "api.payback.com"
     }
+}
 
-//    init(scheme: String = "https", host: String = "api.payback.com") {
-//        self.scheme = scheme
-//        self.host = host
-//    }
+struct DebugNetworkConfiguration: NetworkConfiguration {
+    let scheme: String
+    let host: String
+
+    init() {
+        scheme = "https"
+        host = "api-test.payback.com"
+    }
 }

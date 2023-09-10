@@ -18,12 +18,8 @@ final class DefaultAPIClient: APIClient {
         do {
             let urlRequest = try makeURLRequest(request: request)
             print("[URL]: \(urlRequest.url?.description ?? "")")
-            if request.url == "/transactions" {
-                if let mockDataURL = Bundle.module.url(forResource: "PBTransactions", withExtension: "json") {
-                    let data = try! Data(contentsOf: mockDataURL)
-
-                    return try decoder.decode(data: data)
-                }
+            if let data: T = Mocker().returnMockData(request, decoder: decoder) {
+                return data
             }
             let (data, response) = try await session.data(for: urlRequest)
             guard let response = response as? HTTPURLResponse else { fatalError("Should never happen") }

@@ -7,7 +7,7 @@ public struct ISO8601Strategy: DateCodableStrategy {
         if let date = formatter.date(from: value) {
             return date
         } else {
-            fatalError()
+            fatalError("Invalid format from Backend")
         }
     }
 

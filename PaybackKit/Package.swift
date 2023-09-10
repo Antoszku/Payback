@@ -3,51 +3,34 @@
 import PackageDescription
 
 let package = Package(
-    name: "Networking",
-    platforms: [.iOS(.v16)],
+    name: "PaybackKit",
     products: [
-        .library(target: .Networking),
+        .library(target: .PaybackKit),
     ],
-    dependencies: [
-        .package(.DI),
-        .package(.PaybackKit),
-    ],
+    dependencies: [],
     targets: [
-        .target(name: .Networking, dependencies: [.Resolver, .PaybackKit], resources: [.process("MockJSON")]),
-        .testTarget(name: .NetworkingTests, dependencies: [.Networking]),
+        .target(name: .PaybackKit),
     ]
 )
 
 enum Targets: String {
-    case Networking
-    case NetworkingTests
+    case PaybackKit
 }
 
 enum Dependencies: String {
-    // PaybackKit
-    case PaybackKit
-
-    // Networking
-    case Networking
-
-    // DI
-    case Resolver
+    case Foo
 
     func dependency() -> Target.Dependency {
         switch self {
-        case .Networking,
-             .PaybackKit:
+        // Domain
+        case .Foo:
             return Target.Dependency(self)
-        // DI
-        case .Resolver:
-            return Target.Dependency(self, package: .DI)
         }
     }
 }
 
 enum Packages: String {
-    case DI
-    case PaybackKit
+    case Foo
 }
 
 extension Target {

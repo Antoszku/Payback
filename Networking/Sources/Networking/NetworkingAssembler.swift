@@ -1,3 +1,4 @@
+import PaybackKit
 import Resolver
 
 public struct NetworkingAssembler {
@@ -5,6 +6,11 @@ public struct NetworkingAssembler {
     public init(resolver: Resolver) {
         resolver.register(APIClient.self, initializer: DefaultAPIClient.init)
         resolver.register(SessionService.self, initializer: DefaultSessionService.init)
-        resolver.register(NetworkConfiguration.self, initializer: NetworkConfiguration.init)
+        switch AppEnvironment.current {
+        case .production:
+            resolver.register(NetworkConfiguration.self, initializer: ProductionNetworkConfiguration.init)
+        case .debug:
+            resolver.register(NetworkConfiguration.self, initializer: DebugNetworkConfiguration.init)
+        }
     }
 }

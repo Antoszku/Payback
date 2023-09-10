@@ -18,6 +18,5 @@ struct DefaultTransactionsService: TransactionsService {
 
         let transactions: TransactionsDTO = try await apiClient.sendRequest(request)
         return transactions.items
-//        return response.data.map { .init(dto: $0) }
     }
 }

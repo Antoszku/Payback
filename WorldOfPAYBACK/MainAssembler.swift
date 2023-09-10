@@ -8,5 +8,6 @@ struct MainAssembler {
     init() {
         AppAssembler(resolver: resolver)
         DomainAssembler(resolver: resolver)
+//        AppEnvironment.Setup()
     }
 }

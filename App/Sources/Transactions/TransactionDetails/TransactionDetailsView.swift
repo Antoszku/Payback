@@ -1,6 +1,6 @@
 import Foundation
 
-class TransactionDetailsViewModel: ObservableObject {
+final class TransactionDetailsViewModel: ObservableObject {
     @Published var transaction: TransactionPresentable
 
     init(transaction: TransactionPresentable) {

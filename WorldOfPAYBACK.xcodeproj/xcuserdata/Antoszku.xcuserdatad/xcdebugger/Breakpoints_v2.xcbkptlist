@@ -243,7 +243,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3CAD6EA4-418F-4CB5-9EFD-08C5D77A64E4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DI/Sources/Resolver/Resolver.swift"
@@ -259,7 +259,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "457E5E56-FE20-40EF-8030-60C4C281EF31"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DI/Sources/Resolver/Resolver.swift"
@@ -274,71 +274,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C428ABD-8720-4475-A362-DFE8590FA3ED"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "App/Sources/App/TabBarMainView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "4C428ABD-8720-4475-A362-DFE8590FA3ED - d0ff37e31f0aef7d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in App.TabBarMainView.body.getter : some"
-                  moduleName = "WorldOfPAYBACK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/App/Sources/App/TabBarMainView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "860">
-               </Location>
-               <Location
-                  uuid = "4C428ABD-8720-4475-A362-DFE8590FA3ED - 380559caf69d4ff1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in App.TabBarMainView.body.getter : some"
-                  moduleName = "WorldOfPAYBACK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/App/Sources/App/TabBarMainView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "8">
-               </Location>
-               <Location
-                  uuid = "4C428ABD-8720-4475-A362-DFE8590FA3ED - 73ee26dfd06d7c8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #4 () -&gt; SwiftUI.Label&lt;SwiftUI.Text, SwiftUI.Image&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.tabItem&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(() -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in App.TabBarMainView.body.getter : some"
-                  moduleName = "WorldOfPAYBACK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/App/Sources/App/TabBarMainView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "132">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3A796903-D20A-41E5-BE2E-CB08D2594B3D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DI/Sources/Resolver/Resolver.swift"
@@ -347,6 +284,246 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "register(_:initializer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/NetworkingAssembler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "init(resolver:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 712b11751be1c4b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - f9aca379b0cafc98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 () -&gt; Networking.ProductionNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/NetworkingAssembler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "init(resolver:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 712b11751be1c4f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 40195afd34434298"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 () -&gt; Networking.DebugNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "returnMockData(_:decoder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7 - e669bcd5692bc819"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.Mocker.checkForMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7 - 7a403b1acee73bef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.Mocker.returnMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29448010-A797-4862-B5F8-0CF9B10B354D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "returnMockData(_:decoder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29448010-A797-4862-B5F8-0CF9B10B354D - e669bcd5692bc8f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.Mocker.checkForMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "29448010-A797-4862-B5F8-0CF9B10B354D - 7a403b1acee73bef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.Mocker.returnMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2125E063-7BCB-4027-97D8-72D381498C26"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Client/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "sendRequest(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1EB92C9-597A-4C26-8853-C4E912DB5B2F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "returnMockData(_:decoder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "435B0D95-E910-42D7-A206-32358BADE4D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "returnMockData(_:decoder:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

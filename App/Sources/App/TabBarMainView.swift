@@ -13,9 +13,7 @@ public struct TabBarMainView: View {
 
     public var body: some View {
         TabView {
-            NavigationStack(path: $path) {
-                transactionsViewFactory.currentView
-            }.tabItem { Label("Transactions", systemImage: "bag") }
+            NavigationStack(path: $path) { transactionsViewFactory.rootView }.tabItem { Label("Transactions", systemImage: "bag") }
 
             VStack {}.tabItem { Label("Feed", systemImage: "list.dash") }
 

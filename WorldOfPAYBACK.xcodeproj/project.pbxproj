@@ -43,6 +43,7 @@
 		DB172EED2AABBD2500827026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB172EF32AABBD2500827026 /* WorldOfPAYBACKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB172EFD2AABBD2500827026 /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB42B8F02AAE69E7008C76B5 /* PaybackKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaybackKit; sourceTree = "<group>"; };
 		DB786E052AACA35C009B3E85 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; path = Networking; sourceTree = SOURCE_ROOT; };
 		DB8B377B2AAE397500CC5131 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		DBCE7B082AACD4180038CAE8 /* DI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DI; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				DBCE7B082AACD4180038CAE8 /* DI */,
 				DB8B377B2AAE397500CC5131 /* Domain */,
 				DB786E052AACA35C009B3E85 /* Networking */,
+				DB42B8F02AAE69E7008C76B5 /* PaybackKit */,
 			);
 			name = Packages;
 			sourceTree = "<group>";

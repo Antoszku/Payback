@@ -1,17 +1,8 @@
+import Resolver
 import SwiftUI
 
-public extension View {
-    var erased: AnyView {
-        AnyView(self)
-    }
-}
-
-import Resolver
-
 public struct TransactionsViewFactory {
-    public var currentView: AnyView {
-        makeTransactions().erased
-    }
+    public var rootView: AnyView { AnyView(makeTransactions()) }
 
     public init(resolver: Resolver) {
         self.resolver = resolver
