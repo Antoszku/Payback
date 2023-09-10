@@ -5,6 +5,7 @@ public extension View {
         AnyView(self)
     }
 }
+
 import Resolver
 
 public struct TransactionsViewFactory {
@@ -23,10 +24,8 @@ public struct TransactionsViewFactory {
         let viewModel = TransactionsViewModel(interactor: interactor)
         return TransactionsView(viewModel: viewModel, viewFactory: self)
     }
-    
+
     func makeTransactionDetails(transaction: TransactionPresentable) -> TransactionDetailsView {
         return TransactionDetailsView(viewModel: .init(transaction: transaction))
     }
 }
-
-

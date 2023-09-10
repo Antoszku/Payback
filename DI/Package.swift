@@ -9,7 +9,8 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Resolver",
-            targets: ["Resolver"]),
+            targets: ["Resolver"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/Swinject/SwinjectAutoregistration.git", from: "2.8.3"),
@@ -21,9 +22,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Resolver",
-            dependencies: ["SwinjectAutoregistration"]),
+            dependencies: ["SwinjectAutoregistration"]
+        ),
         .testTarget(
             name: "ResolverTests",
-            dependencies: ["Resolver"]),
+            dependencies: ["Resolver"]
+        ),
     ]
 )

@@ -22,7 +22,6 @@ struct DefaultTransactionsService: TransactionsService {
     }
 }
 
-
 struct TransactionsDTO: Decodable {
     let items: [TransactionDTO]
 }
@@ -32,7 +31,6 @@ public struct TransactionDTO: Decodable {
     public let category: Int
     public let alias: AliasDTO
     public let transactionDetail: TransactionDetailDTO
-
 
     public struct AliasDTO: Decodable {
         public let reference: String
@@ -88,7 +86,6 @@ public struct ISO8601Strategy: DateCodableStrategy {
         formatter.string(from: date)
     }
 }
-
 
 import Foundation
 

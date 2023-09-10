@@ -1,5 +1,5 @@
-import XCTest
 @testable import Resolver
+import XCTest
 
 final class ResolverTests: XCTestCase {
     func testExample() throws {

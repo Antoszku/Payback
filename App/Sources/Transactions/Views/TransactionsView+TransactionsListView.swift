@@ -3,12 +3,12 @@ import SwiftUI
 extension TransactionsView {
     struct TransactionsListView: View {
         @EnvironmentObject var viewModel: TransactionsViewModel
-        
+
         let transactions: [TransactionPresentable]
         let viewFactory: TransactionsViewFactory
-        
+
         private let background = Color(#colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.9803921569, alpha: 1))
-        
+
         var body: some View {
             VStack {
                 HStack {
@@ -33,7 +33,7 @@ extension TransactionsView {
                             NavigationLink(value: transaction) {
                                 Cell(transaction: transaction)
                                     .padding(.vertical, 8)
-                               
+
                             }.buttonStyle(PlainButtonStyle())
                         }
                     }.navigationDestination(for: TransactionPresentable.self, destination: { transaction in

@@ -1,7 +1,6 @@
 import Resolver
 
 public struct NetworkingAssembler {
-    
     @discardableResult
     public init(resolver: Resolver) {
         resolver.register(APIClient.self, initializer: DefaultAPIClient.init)

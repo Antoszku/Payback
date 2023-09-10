@@ -7,7 +7,6 @@ public final class TransactionsViewModel: ObservableObject {
         case transactions([TransactionPresentable])
     }
 
-
     private let interactor: TransactionsInteractor
 
     @Published private(set) var state = State.loading
@@ -28,15 +27,13 @@ public final class TransactionsViewModel: ObservableObject {
             await set(categories: categories)
             await set(transactions: transactions)
             await set(state: .transactions(transactions))
-        } catch {
-
-        }
+        } catch {}
     }
 
     func onFilterTap(_ filter: Int) {
         selectedFilter = filter
         let transactionsTemp = transactions.filter { $0.category == filter }
-        self.totalAmount = transactionsTemp.map { $0.amount }.reduce(0, +)
+        totalAmount = transactionsTemp.map { $0.amount }.reduce(0, +)
         state = .transactions(transactionsTemp)
     }
 
@@ -47,7 +44,7 @@ public final class TransactionsViewModel: ObservableObject {
 
     @MainActor
     private func set(transactions: [TransactionPresentable]) {
-        self.totalAmount = transactions.map { $0.amount }.reduce(0, +)
+        totalAmount = transactions.map { $0.amount }.reduce(0, +)
         self.transactions = transactions
     }
 
@@ -89,14 +86,14 @@ struct TransactionPresentable: Identifiable, Hashable {
     init(dto: TransactionDTO) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm d MMM yyyy"
-        self.bookingDateDescription = dateFormatter.string(from: dto.transactionDetail.bookingDate)
+        bookingDateDescription = dateFormatter.string(from: dto.transactionDetail.bookingDate)
 
-        self.id = dto.alias.reference
-        self.bookingDate = dto.transactionDetail.bookingDate
-        self.category = dto.category
-        self.partnerDisplayName = dto.partnerDisplayName
-        self.transactionDetailDescription = dto.transactionDetail.description
-        self.amount = dto.transactionDetail.value.amount
-        self.currency = dto.transactionDetail.value.currency
+        id = dto.alias.reference
+        bookingDate = dto.transactionDetail.bookingDate
+        category = dto.category
+        partnerDisplayName = dto.partnerDisplayName
+        transactionDetailDescription = dto.transactionDetail.description
+        amount = dto.transactionDetail.value.amount
+        currency = dto.transactionDetail.value.currency
     }
 }

@@ -9,8 +9,7 @@ final class DefaultAPIClient: APIClient {
     private let networkConfiguration: NetworkConfiguration
     private let decoder = DefaultDecoder()
 
-    init(session: SessionService, networkConfiguration: NetworkConfiguration)
-    {
+    init(session: SessionService, networkConfiguration: NetworkConfiguration) {
         self.session = session
         self.networkConfiguration = networkConfiguration
     }
@@ -55,8 +54,8 @@ final class DefaultAPIClient: APIClient {
 
     private func printPrettyJson(for data: Data) {
         guard let object = try? JSONSerialization.jsonObject(with: data, options: []),
-            let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
-            let prettyPrintedString = String(data: data, encoding: .utf8) else { return }
+              let data = try? JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted]),
+              let prettyPrintedString = String(data: data, encoding: .utf8) else { return }
 
         print(prettyPrintedString)
     }

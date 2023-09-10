@@ -11,11 +11,11 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Domain", path: "../Domain"),
-        .package(name: "DI", path: "../DI")
+        .package(name: "DI", path: "../DI"),
     ],
     targets: [
         .target(name: .App, dependencies: [.Transactions]),
-        .target(name: .Transactions, dependencies: [.TransactionsService, .Resolver])
+        .target(name: .Transactions, dependencies: [.TransactionsService, .Resolver]),
     ]
 )
 
@@ -35,6 +35,7 @@ extension Target.Dependency {
     init(_ target: DomainDependency) {
         self.init(stringLiteral: target.rawValue)
     }
+
     init(_ target: DomainDependency, package: String) {
         self = Target.Dependency.product(name: target.rawValue, package: package)
     }
@@ -42,7 +43,7 @@ extension Target.Dependency {
 
 enum AppTarget: String {
     case App
-    
+
     case Transactions
 }
 
@@ -51,16 +52,16 @@ enum DomainDependency: String {
     case TransactionsService
     case Resolver
     case Transactions
-    
+
     func dependency() -> Target.Dependency {
         switch self {
-            // Domain
+        // Domain
         case .Transactions:
             return Target.Dependency(self)
-            
+
         case .TransactionsService:
             return Target.Dependency(self, package: "Domain")
-            
+
         case .Resolver:
             return Target.Dependency(self, package: "DI")
         }

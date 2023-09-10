@@ -8,17 +8,20 @@ let package = Package(
     products: [
         .library(
             name: "Networking",
-            targets: ["Networking"]),
+            targets: ["Networking"]
+        ),
     ],
     dependencies: [
-        .package(name: "DI", path: "../DI")
+        .package(name: "DI", path: "../DI"),
     ],
     targets: [
         .target(
             name: "Networking",
-            dependencies: [Target.Dependency.product(name: "Resolver", package: "DI")], resources: [.process("Mocks")]),
+            dependencies: [Target.Dependency.product(name: "Resolver", package: "DI")], resources: [.process("Mocks")]
+        ),
         .testTarget(
             name: "NetworkingTests",
-            dependencies: ["Networking"]),
+            dependencies: ["Networking"]
+        ),
     ]
 )

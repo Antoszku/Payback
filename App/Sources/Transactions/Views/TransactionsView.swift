@@ -12,8 +12,8 @@ struct TransactionsView: View {
             }
         }
 
-            .onAppear { onAppear() }
-            .environmentObject(viewModel)
+        .onAppear { onAppear() }
+        .environmentObject(viewModel)
     }
 
     private func onAppear() {
@@ -21,5 +21,4 @@ struct TransactionsView: View {
             await viewModel.onAppear()
         }
     }
-
 }

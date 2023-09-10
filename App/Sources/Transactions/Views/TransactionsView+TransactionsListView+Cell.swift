@@ -12,7 +12,7 @@ extension TransactionsView.TransactionsListView {
                     Spacer()
                     Text("\(transaction.amount) \(transaction.currency)")
                 }
-            } .padding(8)
+            }.padding(8)
                 .background(.white)
                 .cornerRadius(8)
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(.black, lineWidth: 1))

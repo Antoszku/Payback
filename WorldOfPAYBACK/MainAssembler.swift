@@ -1,6 +1,6 @@
-import Resolver
-import Domain
 import App
+import Domain
+import Resolver
 
 struct MainAssembler {
     let resolver = Resolver()
