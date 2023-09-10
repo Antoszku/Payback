@@ -1,19 +1,15 @@
+import Networking
+
 public protocol TransactionsService {
     func getTransactions() async throws -> [TransactionDTO]
 }
 
-import Networking
-
-public struct DefaultTransactionsService: TransactionsService {
+struct DefaultTransactionsService: TransactionsService {
     private let apiClient: APIClient
     private let url = "/transactions"
 
-    init(apiClient: APIClient = DefaultAPIClient()) {
+    init(apiClient: APIClient) {
         self.apiClient = apiClient
-    }
-
-    public init() {
-        self.apiClient = DefaultAPIClient()
     }
 
     public func getTransactions() async throws -> [TransactionDTO] {

@@ -1,18 +1,21 @@
 import SwiftUI
 import Transactions
+import Resolver
 
 public struct TabBarMainView: View {
     @State var path = NavigationPath()
 
-    let coordinator = TransactionsCoordinator()
+    private let transactionsViewFactory: TransactionsViewFactory
     
-    public init() { }
+    public init(resolver: Resolver) {
+        self.transactionsViewFactory = TransactionsViewFactory(resolver: resolver)
+    }
 
     public var body: some View {
         TabView {
 
             NavigationStack(path: $path) {
-                coordinator.mainView
+                transactionsViewFactory.currentView
             }.tabItem { Label("Transactions", systemImage: "bag") }
 
             VStack { }.tabItem { Label("Feed", systemImage: "list.dash") }

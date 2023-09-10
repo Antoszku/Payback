@@ -13,4 +13,12 @@ public struct Resolver {
     public func register<T>(_ type: T.Type, initializer: @escaping (() -> T)) {
         container.autoregister(type, initializer: initializer)
     }
+    
+    public func register<T, A>(_ type: T.Type, initializer: @escaping ((A) -> T)) {
+        container.autoregister(type, initializer: initializer)
+    }
+    
+    public func register<T, A, B>(_ type: T.Type, initializer: @escaping ((A, B) -> T)) {
+        container.autoregister(type, initializer: initializer)
+    }
 }

@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "App",
+    name: "Domain",
     platforms: [.iOS(.v16)],
     products: [
-        .library(name: AppTarget.App.rawValue, targets: [AppTarget.App.rawValue]),
-        .library(name: AppTarget.Transactions.rawValue, targets: [AppTarget.Transactions.rawValue]),
+        .library(name: AppTarget.Domain.rawValue, targets: [AppTarget.Domain.rawValue]),
+        .library(name: AppTarget.TransactionsService.rawValue, targets: [AppTarget.TransactionsService.rawValue]),
     ],
     dependencies: [
-        .package(name: "Domain", path: "../Domain"),
+        .package(name: "Networking", path: "../Networking"),
         .package(name: "DI", path: "../DI")
     ],
     targets: [
-        .target(name: .App, dependencies: [.Transactions]),
-        .target(name: .Transactions, dependencies: [.TransactionsService, .Resolver])
+        .target(name: .Domain, dependencies: [.Networking, .Resolver, .TransactionsService]),
+        .target(name: .TransactionsService, dependencies: [.Networking, .Resolver])
     ]
 )
 
@@ -35,31 +35,29 @@ extension Target.Dependency {
     init(_ target: DomainDependency) {
         self.init(stringLiteral: target.rawValue)
     }
+    
     init(_ target: DomainDependency, package: String) {
         self = Target.Dependency.product(name: target.rawValue, package: package)
     }
 }
 
 enum AppTarget: String {
-    case App
+    case Domain
     
-    case Transactions
+    case TransactionsService
 }
 
 enum DomainDependency: String {
     // Domain
     case TransactionsService
+    case Networking
     case Resolver
-    case Transactions
     
     func dependency() -> Target.Dependency {
         switch self {
             // Domain
-        case .Transactions:
+        case .TransactionsService, .Networking:
             return Target.Dependency(self)
-            
-        case .TransactionsService:
-            return Target.Dependency(self, package: "Domain")
             
         case .Resolver:
             return Target.Dependency(self, package: "DI")

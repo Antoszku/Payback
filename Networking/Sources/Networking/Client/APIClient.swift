@@ -3,20 +3,13 @@ import Foundation
 public protocol APIClient {
     func sendRequest<T: Decodable>(_ request: Request) async throws -> T
 }
-import Foundation
 
-public final class DefaultAPIClient: APIClient {
+final class DefaultAPIClient: APIClient {
     private let session: SessionService
     private let networkConfiguration: NetworkConfiguration
     private let decoder = DefaultDecoder()
 
-    public init() {
-        self.session = DefaultSessionService()
-        self.networkConfiguration = NetworkConfiguration()
-    }
-
-    init(session: SessionService = DefaultSessionService(),
-         networkConfiguration: NetworkConfiguration = NetworkConfiguration())
+    init(session: SessionService, networkConfiguration: NetworkConfiguration)
     {
         self.session = session
         self.networkConfiguration = networkConfiguration

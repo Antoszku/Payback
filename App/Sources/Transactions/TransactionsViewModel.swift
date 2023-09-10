@@ -17,7 +17,7 @@ public final class TransactionsViewModel: ObservableObject {
     private var selectedFilter: Int?
     private var transactions = [TransactionPresentable]()
 
-    init(interactor: TransactionsInteractor = DefaultTransactionsInteractor()) {
+    init(interactor: TransactionsInteractor) {
         self.interactor = interactor
     }
 
@@ -64,13 +64,9 @@ protocol TransactionsInteractor {
 final class DefaultTransactionsInteractor: TransactionsInteractor {
     private let service: TransactionsService
 
-    init() {
-        service = DefaultTransactionsService()
+    init(service: TransactionsService) {
+        self.service = service
     }
-
-//    init(service: TransactionsService = DefaultTransactionsService()) {
-//        self.service = service
-//    }
 
     func getTransactions() async throws -> [TransactionPresentable] {
         let transactionsDTO = try await service.getTransactions()
@@ -104,47 +100,3 @@ struct TransactionPresentable: Identifiable, Hashable {
         self.currency = dto.transactionDetail.value.currency
     }
 }
-
-
-
-public struct Assembly {
-
-}
-
-
-struct XAssembly {
-
-    public func assemble(into container: Resolver) {
-        container.register(TransactionsInteractor.self, initializer: DefaultTransactionsInteractor.init)
-    }
-}
-
-import SwiftUI
-import Resolver
-public protocol Coordinator {
-    var mainView: AnyView { get }
-}
-public extension View {
-    var erased: AnyView {
-        AnyView(self)
-    }
-}
-
-public struct TransactionsCoordinator: Coordinator {
-
-    public var mainView: AnyView {
-        makeTransactions().erased
-    }
-
-    public init() { }
-
-    let resolver = Resolver()
-
-    func makeTransactions() -> TransactionsView {
-        let interactor = resolver.resolve(TransactionsInteractor.self)
-        let viewModel = TransactionsViewModel(interactor: interactor)
-        return TransactionsView(viewModel: viewModel)
-    }
-}
-
-

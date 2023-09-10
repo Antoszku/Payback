@@ -11,11 +11,12 @@ let package = Package(
             targets: ["Networking"]),
     ],
     dependencies: [
+        .package(name: "DI", path: "../DI")
     ],
     targets: [
         .target(
             name: "Networking",
-            dependencies: [], resources: [.process("Mocks")]),
+            dependencies: [Target.Dependency.product(name: "Resolver", package: "DI")], resources: [.process("Mocks")]),
         .testTarget(
             name: "NetworkingTests",
             dependencies: ["Networking"]),
