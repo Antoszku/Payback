@@ -24,8 +24,8 @@ final class TransactionsViewModel: ObservableObject {
     func onFilterTap(_ filter: Int) {
         if selectedFilter == filter {
             selectedFilter = nil
-            state = .transactions(transactions)
             totalAmount = nil
+            state = .transactions(transactions)
         } else {
             selectedFilter = filter
             let filteredTransactions = transactions.filter { $0.category == filter }
@@ -37,7 +37,8 @@ final class TransactionsViewModel: ObservableObject {
     func loadTransactions() async {
         do {
             await set(state: .loading)
-            try await Task.sleep(nanoseconds: 2_000_000_000)
+            await turnOffFilter()
+            try await Task.sleep(nanoseconds: 1_000_000_000) // Code for recruitment purposes
             let transactions = try await interactor.getTransactions().sorted(by: { $0.bookingDate > $1.bookingDate })
             let categories = transactions.map { $0.category }
             await set(categories: categories)
@@ -46,6 +47,12 @@ final class TransactionsViewModel: ObservableObject {
         } catch {
             await set(state: .error)
         }
+    }
+
+    @MainActor
+    private func turnOffFilter() {
+        selectedFilter = nil
+        totalAmount = nil
     }
 
     @MainActor

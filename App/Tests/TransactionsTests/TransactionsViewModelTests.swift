@@ -174,6 +174,16 @@ final class TransactionsViewModelTests: XCTestCase {
         XCTAssertEqual(states, [.loading, .loading, .transactions([])])
     }
 
+    func test_loadTransactions_turnOffFilters() async {
+        let sut = makeSut()
+        sut.onFilterTap(1)
+
+        await sut.loadTransactions()
+
+        XCTAssertNil(sut.selectedFilter)
+        XCTAssertNil(sut.totalAmount)
+    }
+
     private func makeSut(interactor: TransactionsInteractor = TransactionsInteractorStub()) -> TransactionsViewModel {
         TransactionsViewModel(interactor: interactor)
     }
