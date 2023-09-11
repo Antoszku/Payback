@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "F239D651-D790-4046-8C5D-FA63C675BDD0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:WorldOfPAYBACK.xcodeproj",
+        "identifier" : "DB2955482AAF282E00B4D5BF",
+        "name" : "WorldOfPAYBACKTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:App",
+        "identifier" : "TransactionsTests",
+        "name" : "TransactionsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Networking",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
+      }
+    }
+  ],
+  "version" : 1
+}

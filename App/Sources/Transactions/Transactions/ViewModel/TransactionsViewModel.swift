@@ -2,46 +2,50 @@ import Foundation
 import TransactionsService
 
 final class TransactionsViewModel: ObservableObject {
-    enum State {
+    enum State: Equatable {
         case loading
         case transactions([TransactionPresentable])
         case error
     }
 
-    private let interactor: TransactionsInteractor
-
     @Published private(set) var state = State.loading
     @Published private(set) var categories = [Int]()
-    @Published private(set) var totalAmount = 0
+    @Published private(set) var totalAmount: Int?
+    @Published private(set) var selectedFilter: Int?
 
-    private var selectedFilter: Int?
+    private let interactor: TransactionsInteractor
+
     private var transactions = [TransactionPresentable]()
 
     init(interactor: TransactionsInteractor) {
         self.interactor = interactor
     }
 
-    func onAppear() async {
+    func onFilterTap(_ filter: Int) {
+        if selectedFilter == filter {
+            selectedFilter = nil
+            state = .transactions(transactions)
+            totalAmount = nil
+        } else {
+            selectedFilter = filter
+            let filteredTransactions = transactions.filter { $0.category == filter }
+            totalAmount = filteredTransactions.map { $0.amount }.reduce(0, +)
+            state = .transactions(filteredTransactions)
+        }
+    }
+
+    func loadTransactions() async {
         do {
+            await set(state: .loading)
+            try await Task.sleep(nanoseconds: 2_000_000_000)
             let transactions = try await interactor.getTransactions().sorted(by: { $0.bookingDate > $1.bookingDate })
-            let categories = Set(transactions.map { $0.category })
+            let categories = transactions.map { $0.category }
             await set(categories: categories)
             await set(transactions: transactions)
             await set(state: .transactions(transactions))
-        } catch {}
-    }
-
-    func onFilterTap(_ filter: Int) {
-        selectedFilter = filter
-        let transactionsTemp = transactions.filter { $0.category == filter }
-        totalAmount = transactionsTemp.map { $0.amount }.reduce(0, +)
-        state = .transactions(transactionsTemp)
-    }
-    
-    func reload() async {
-        await set(state: .loading)
-        await try? Task.sleep(nanoseconds: 1_000_000_000)
-        await set(state: .transactions(transactions))
+        } catch {
+            await set(state: .error)
+        }
     }
 
     @MainActor
@@ -51,12 +55,11 @@ final class TransactionsViewModel: ObservableObject {
 
     @MainActor
     private func set(transactions: [TransactionPresentable]) {
-        totalAmount = transactions.map { $0.amount }.reduce(0, +)
         self.transactions = transactions
     }
 
     @MainActor
-    private func set(categories: Set<Int>) {
-        self.categories = Array(categories)
+    private func set(categories: [Int]) {
+        self.categories = Array(Set(categories)).sorted()
     }
 }

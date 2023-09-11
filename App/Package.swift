@@ -16,12 +16,14 @@ let package = Package(
     targets: [
         .target(name: .App, dependencies: [.Transactions]),
         .target(name: .Transactions, dependencies: [.TransactionsService, .Resolver]),
+        .testTarget(name: .TransactionsTests, dependencies: [.Transactions]),
     ]
 )
 
 enum Targets: String {
     case App
     case Transactions
+    case TransactionsTests
 }
 
 enum Dependencies: String {
@@ -64,6 +66,15 @@ extension Target {
                 dependencies: dependencies.map { $0.dependency() },
                 path: "Sources/\(name)",
                 resources: resources)
+    }
+
+    static func testTarget(name: Targets,
+                           dependencies: [Dependencies] = [],
+                           resources: [Resource]? = nil) -> Target {
+        .testTarget(name: name.rawValue,
+                    dependencies: dependencies.map { $0.dependency() },
+                    path: "Tests/\(name)",
+                    resources: resources)
     }
 }
 

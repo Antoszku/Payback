@@ -1,8 +1,9 @@
 import SwiftUI
 
-extension TransactionsView.TransactionsListView {
+extension TransactionsView.TransactionsListView.TransactionsList {
     struct Cell: View {
         let transaction: TransactionPresentable
+
         var body: some View {
             VStack(alignment: .leading) {
                 Text(transaction.bookingDateDescription)

@@ -332,6 +332,126 @@
                   endingLineNumber = "11"
                   offsetFromSymbolStart = "8">
                </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 996a557e9aafc33e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "NetworkingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 11ede7723184fb14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 () -&gt; Networking.ProductionNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "NetworkingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 9f9c0e8641016369"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 171bbc8aea2a5b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 () -&gt; Networking.ProductionNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 712b11751be1c4b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - f9aca379b0cafc98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 () -&gt; Networking.ProductionNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 9f9c0e8641016369"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "0E662F52-6A0E-45D1-8B94-2D799BF9306B - 171bbc8aea2a5b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 () -&gt; Networking.ProductionNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -380,53 +500,173 @@
                   endingLineNumber = "13"
                   offsetFromSymbolStart = "8">
                </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 996a557e9aafc378"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "NetworkingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - a8581ef6b50d4514"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 () -&gt; Networking.DebugNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "NetworkingTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 9f9c0e864101632f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - aeae450e6ea3e543"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 () -&gt; Networking.DebugNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 712b11751be1c4f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 40195afd34434298"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 () -&gt; Networking.DebugNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "WorldOfPAYBACK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - 9f9c0e864101632f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "56FB7B93-C528-4E6E-B50A-68ABAEE59FBF - aeae450e6ea3e543"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 () -&gt; Networking.DebugNetworkConfiguration in Networking.NetworkingAssembler.init(resolver: Resolver.Resolver) -&gt; Networking.NetworkingAssembler"
+                  moduleName = "TransactionsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/NetworkingAssembler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7"
+            uuid = "270C6C73-EA43-44AE-803D-30D753F7F139"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            filePath = "Networking/Tests/NetworkingTests/APIClientTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "returnMockData(_:decoder:)"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "test_sendRequest_callSessionDataFor_withCorrectRequest()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7 - e669bcd5692bc819"
+                  uuid = "270C6C73-EA43-44AE-803D-30D753F7F139 - 597f4188ca1d5d77"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Networking.Mocker.checkForMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "WorldOfPAYBACK"
+                  symbolName = "(3) suspend resume partial function for NetworkingTests.APIClientTests.test_sendRequest_callSessionDataFor_withCorrectRequest() async -&gt; ()"
+                  moduleName = "NetworkingTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Tests/NetworkingTests/APIClientTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "524">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "136">
                </Location>
                <Location
-                  uuid = "B99C7556-8844-42AA-AAC8-6E8CEE9639C7 - 7a403b1acee73bef"
+                  uuid = "270C6C73-EA43-44AE-803D-30D753F7F139 - a160550f1210c370"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Networking.Mocker.returnMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "WorldOfPAYBACK"
+                  symbolName = "(4) suspend resume partial function for NetworkingTests.APIClientTests.test_sendRequest_callSessionDataFor_withCorrectRequest() async -&gt; ()"
+                  moduleName = "NetworkingTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
+                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Tests/NetworkingTests/APIClientTests.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "524">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "152">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -434,97 +674,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "29448010-A797-4862-B5F8-0CF9B10B354D"
+            uuid = "BA0DC2EE-541C-444C-83F8-7FCE3B58F823"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "returnMockData(_:decoder:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "29448010-A797-4862-B5F8-0CF9B10B354D - e669bcd5692bc8f8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Networking.Mocker.checkForMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "WorldOfPAYBACK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "844">
-               </Location>
-               <Location
-                  uuid = "29448010-A797-4862-B5F8-0CF9B10B354D - 7a403b1acee73bef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Networking.Mocker.returnMockData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(_: Networking.Request, decoder: Networking.DefaultDecoder) -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "WorldOfPAYBACK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Antoszku/Developer/WorldOfPAYBACK/Networking/Sources/Networking/Mock/Mocker.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "10"
-                  endingLineNumber = "10"
-                  offsetFromSymbolStart = "524">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2125E063-7BCB-4027-97D8-72D381498C26"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Networking/Sources/Networking/Client/APIClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "sendRequest(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1EB92C9-597A-4C26-8853-C4E912DB5B2F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "returnMockData(_:decoder:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "435B0D95-E910-42D7-A206-32358BADE4D4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Networking/Sources/Networking/Mock/Mocker.swift"
+            filePath = "App/Sources/Transactions/Utility/ViewFactory/TransactionsViewFactory.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "returnMockData(_:decoder:)"
+            landmarkName = "makeTransactions()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AECB0D06-08F1-4DEC-9E34-A46383A45C95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App/Sources/Transactions/Utility/ViewFactory/TransactionsViewFactory.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "TransactionsViewFactory"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

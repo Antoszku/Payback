@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct TransactionsView: View {
-    @StateObject var viewModel: TransactionsViewModel
+    @ObservedObject var viewModel: TransactionsViewModel
+
     let viewFactory: TransactionsViewFactory
 
     var body: some View {
@@ -12,15 +13,11 @@ struct TransactionsView: View {
             case .error: TryAgainView()
             }
         }
-            .onAppear { onAppear() }
-            .environmentObject(viewModel)
+        .onAppear { onAppear() }
+        .environmentObject(viewModel)
     }
 
     private func onAppear() {
-        Task {
-            try await Task.sleep(nanoseconds: 2_000_000_000)
-            await viewModel.onAppear()
-        }
+        Task { await viewModel.loadTransactions() }
     }
 }
-

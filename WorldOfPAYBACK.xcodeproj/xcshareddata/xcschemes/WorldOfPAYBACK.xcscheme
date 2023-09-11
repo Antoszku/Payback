@@ -26,15 +26,20 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:WorldOfPAYBACKTests/WorldOfPAYBACK.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DB172EF22AABBD2500827026"
+               BlueprintIdentifier = "DB2955482AAF282E00B4D5BF"
                BuildableName = "WorldOfPAYBACKTests.xctest"
                BlueprintName = "WorldOfPAYBACKTests"
                ReferencedContainer = "container:WorldOfPAYBACK.xcodeproj">

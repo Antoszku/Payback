@@ -11,20 +11,14 @@
 		DB172EE62AABBD2300827026 /* WorldOfPAYBACKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB172EE52AABBD2300827026 /* WorldOfPAYBACKApp.swift */; };
 		DB172EEA2AABBD2500827026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB172EE92AABBD2500827026 /* Assets.xcassets */; };
 		DB172EEE2AABBD2500827026 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB172EED2AABBD2500827026 /* Preview Assets.xcassets */; };
+		DB29554C2AAF282E00B4D5BF /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB29554B2AAF282E00B4D5BF /* WorldOfPAYBACKTests.swift */; };
 		DB6375462AAE3E0C0069CD2B /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = DB6375452AAE3E0C0069CD2B /* Domain */; };
 		DB6375482AAE3EC40069CD2B /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = DB6375472AAE3EC40069CD2B /* Resolver */; };
 		DB922B872AAE46F2007BBC38 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = DB922B862AAE46F2007BBC38 /* App */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DB172EF42AABBD2500827026 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB172EDA2AABBD2300827026 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB172EE12AABBD2300827026;
-			remoteInfo = WorldOfPAYBACK;
-		};
-		DB172EFE2AABBD2500827026 /* PBXContainerItemProxy */ = {
+		DB29554D2AAF282E00B4D5BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DB172EDA2AABBD2300827026 /* Project object */;
 			proxyType = 1;
@@ -41,8 +35,9 @@
 		DB172EE92AABBD2500827026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB172EEB2AABBD2500827026 /* WorldOfPAYBACK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorldOfPAYBACK.entitlements; sourceTree = "<group>"; };
 		DB172EED2AABBD2500827026 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DB172EF32AABBD2500827026 /* WorldOfPAYBACKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB172EFD2AABBD2500827026 /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2955492AAF282E00B4D5BF /* WorldOfPAYBACKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB29554B2AAF282E00B4D5BF /* WorldOfPAYBACKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKTests.swift; sourceTree = "<group>"; };
+		DB2955522AAF28F800B4D5BF /* WorldOfPAYBACK.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = WorldOfPAYBACK.xctestplan; sourceTree = "<group>"; };
 		DB42B8F02AAE69E7008C76B5 /* PaybackKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PaybackKit; sourceTree = "<group>"; };
 		DB786E052AACA35C009B3E85 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; path = Networking; sourceTree = SOURCE_ROOT; };
 		DB8B377B2AAE397500CC5131 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
@@ -60,14 +55,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB172EF02AABBD2500827026 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB172EFA2AABBD2500827026 /* Frameworks */ = {
+		DB2955462AAF282E00B4D5BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,6 +70,7 @@
 			children = (
 				DB786E0A2AACA3A4009B3E85 /* Packages */,
 				DB172EE42AABBD2300827026 /* WorldOfPAYBACK */,
+				DB29554A2AAF282E00B4D5BF /* WorldOfPAYBACKTests */,
 				DB172EE32AABBD2300827026 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DB172EE22AABBD2300827026 /* WorldOfPAYBACK.app */,
-				DB172EF32AABBD2500827026 /* WorldOfPAYBACKTests.xctest */,
-				DB172EFD2AABBD2500827026 /* WorldOfPAYBACKUITests.xctest */,
+				DB2955492AAF282E00B4D5BF /* WorldOfPAYBACKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +102,15 @@
 				DB172EED2AABBD2500827026 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB29554A2AAF282E00B4D5BF /* WorldOfPAYBACKTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB2955522AAF28F800B4D5BF /* WorldOfPAYBACK.xctestplan */,
+				DB29554B2AAF282E00B4D5BF /* WorldOfPAYBACKTests.swift */,
+			);
+			path = WorldOfPAYBACKTests;
 			sourceTree = "<group>";
 		};
 		DB786E0A2AACA3A4009B3E85 /* Packages */ = {
@@ -153,41 +150,23 @@
 			productReference = DB172EE22AABBD2300827026 /* WorldOfPAYBACK.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB172EF22AABBD2500827026 /* WorldOfPAYBACKTests */ = {
+		DB2955482AAF282E00B4D5BF /* WorldOfPAYBACKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB172F0A2AABBD2500827026 /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */;
+			buildConfigurationList = DB2955512AAF282E00B4D5BF /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */;
 			buildPhases = (
-				DB172EEF2AABBD2500827026 /* Sources */,
-				DB172EF02AABBD2500827026 /* Frameworks */,
-				DB172EF12AABBD2500827026 /* Resources */,
+				DB2955452AAF282E00B4D5BF /* Sources */,
+				DB2955462AAF282E00B4D5BF /* Frameworks */,
+				DB2955472AAF282E00B4D5BF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB172EF52AABBD2500827026 /* PBXTargetDependency */,
+				DB29554E2AAF282E00B4D5BF /* PBXTargetDependency */,
 			);
 			name = WorldOfPAYBACKTests;
 			productName = WorldOfPAYBACKTests;
-			productReference = DB172EF32AABBD2500827026 /* WorldOfPAYBACKTests.xctest */;
+			productReference = DB2955492AAF282E00B4D5BF /* WorldOfPAYBACKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DB172EFC2AABBD2500827026 /* WorldOfPAYBACKUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB172F0D2AABBD2500827026 /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKUITests" */;
-			buildPhases = (
-				DB172EF92AABBD2500827026 /* Sources */,
-				DB172EFA2AABBD2500827026 /* Frameworks */,
-				DB172EFB2AABBD2500827026 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB172EFF2AABBD2500827026 /* PBXTargetDependency */,
-			);
-			name = WorldOfPAYBACKUITests;
-			productName = WorldOfPAYBACKUITests;
-			productReference = DB172EFD2AABBD2500827026 /* WorldOfPAYBACKUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,11 +181,7 @@
 					DB172EE12AABBD2300827026 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
-					DB172EF22AABBD2500827026 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = DB172EE12AABBD2300827026;
-					};
-					DB172EFC2AABBD2500827026 = {
+					DB2955482AAF282E00B4D5BF = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = DB172EE12AABBD2300827026;
 					};
@@ -226,8 +201,7 @@
 			projectRoot = "";
 			targets = (
 				DB172EE12AABBD2300827026 /* WorldOfPAYBACK */,
-				DB172EF22AABBD2500827026 /* WorldOfPAYBACKTests */,
-				DB172EFC2AABBD2500827026 /* WorldOfPAYBACKUITests */,
+				DB2955482AAF282E00B4D5BF /* WorldOfPAYBACKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,14 +216,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB172EF12AABBD2500827026 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB172EFB2AABBD2500827026 /* Resources */ = {
+		DB2955472AAF282E00B4D5BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,32 +235,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB172EEF2AABBD2500827026 /* Sources */ = {
+		DB2955452AAF282E00B4D5BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB172EF92AABBD2500827026 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DB29554C2AAF282E00B4D5BF /* WorldOfPAYBACKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DB172EF52AABBD2500827026 /* PBXTargetDependency */ = {
+		DB29554E2AAF282E00B4D5BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DB172EE12AABBD2300827026 /* WorldOfPAYBACK */;
-			targetProxy = DB172EF42AABBD2500827026 /* PBXContainerItemProxy */;
-		};
-		DB172EFF2AABBD2500827026 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB172EE12AABBD2300827026 /* WorldOfPAYBACK */;
-			targetProxy = DB172EFE2AABBD2500827026 /* PBXContainerItemProxy */;
+			targetProxy = DB29554D2AAF282E00B4D5BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -479,21 +435,18 @@
 			};
 			name = Release;
 		};
-		DB172F0B2AABBD2500827026 /* Debug */ = {
+		DB29554F2AAF282E00B4D5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DominikRygiel.WorldOfPAYBACKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,67 +454,23 @@
 			};
 			name = Debug;
 		};
-		DB172F0C2AABBD2500827026 /* Release */ = {
+		DB2955502AAF282E00B4D5BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DominikRygiel.WorldOfPAYBACKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorldOfPAYBACK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WorldOfPAYBACK";
-			};
-			name = Release;
-		};
-		DB172F0E2AABBD2500827026 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DominikRygiel.WorldOfPAYBACKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WorldOfPAYBACK;
-			};
-			name = Debug;
-		};
-		DB172F0F2AABBD2500827026 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DominikRygiel.WorldOfPAYBACKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WorldOfPAYBACK;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -586,20 +495,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB172F0A2AABBD2500827026 /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */ = {
+		DB2955512AAF282E00B4D5BF /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB172F0B2AABBD2500827026 /* Debug */,
-				DB172F0C2AABBD2500827026 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB172F0D2AABBD2500827026 /* Build configuration list for PBXNativeTarget "WorldOfPAYBACKUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB172F0E2AABBD2500827026 /* Debug */,
-				DB172F0F2AABBD2500827026 /* Release */,
+				DB29554F2AAF282E00B4D5BF /* Debug */,
+				DB2955502AAF282E00B4D5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

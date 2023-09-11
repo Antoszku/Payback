@@ -4,7 +4,7 @@ protocol TransactionsInteractor {
     func getTransactions() async throws -> [TransactionPresentable]
 }
 
-final class DefaultTransactionsInteractor: TransactionsInteractor {
+struct DefaultTransactionsInteractor: TransactionsInteractor {
     private let service: TransactionsService
 
     init(service: TransactionsService) {

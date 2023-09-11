@@ -10,12 +10,11 @@ struct TransactionPresentable: Identifiable, Hashable {
     let transactionDetailDescription: String?
     let amount: Int
     let currency: String
+}
 
+extension TransactionPresentable {
     init(dto: TransactionDTO) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "h:mm d MMM yyyy"
-        bookingDateDescription = dateFormatter.string(from: dto.transactionDetail.bookingDate)
-
+        bookingDateDescription = dto.transactionDetail.bookingDate.formatted(.dateTime)
         id = dto.alias.reference
         bookingDate = dto.transactionDetail.bookingDate
         category = dto.category
