@@ -11,9 +11,9 @@ extension TransactionsView.TransactionsListView {
                     HStack(spacing: 8) {
                         ForEach(viewModel.categories, id: \.self) { category in
                             Button("\(category)") { viewModel.onFilterTap(category) }
-                            .tint(viewModel.selectedFilter == category ? .blue : .gray)
-                            .controlSize(.regular)
-                            .buttonStyle(.bordered)
+                                .tint(viewModel.selectedFilter == category ? .blue : .gray)
+                                .controlSize(.regular)
+                                .buttonStyle(.bordered)
                         }
                     }
                 }

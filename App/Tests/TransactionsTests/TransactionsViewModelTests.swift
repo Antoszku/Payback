@@ -1,6 +1,6 @@
+import Combine
 @testable import Transactions
 import XCTest
-import Combine
 
 final class TransactionsViewModelTests: XCTestCase {
     func test_loadTransactions_callInteractor() async {
@@ -173,7 +173,7 @@ final class TransactionsViewModelTests: XCTestCase {
 
         XCTAssertEqual(states, [.loading, .loading, .transactions([])])
     }
-    
+
     private func makeSut(interactor: TransactionsInteractor = TransactionsInteractorStub()) -> TransactionsViewModel {
         TransactionsViewModel(interactor: interactor)
     }

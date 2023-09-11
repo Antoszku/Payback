@@ -1,5 +1,5 @@
-@testable import Transactions
 import Foundation
+@testable import Transactions
 
 extension TransactionPresentable {
     static func build(id: String = "",
@@ -10,13 +10,13 @@ extension TransactionPresentable {
                       transactionDetailDescription: String? = "",
                       amount: Int = 1,
                       currency: String = "") -> Self {
-            .init(id: id,
-                  bookingDate: bookingDate,
-                  category: category,
-                  bookingDateDescription: bookingDateDescription,
-                  partnerDisplayName: partnerDisplayName,
-                  transactionDetailDescription: transactionDetailDescription,
-                  amount: amount,
-                  currency: currency)
+        .init(id: id,
+              bookingDate: bookingDate,
+              category: category,
+              bookingDateDescription: bookingDateDescription,
+              partnerDisplayName: partnerDisplayName,
+              transactionDetailDescription: transactionDetailDescription,
+              amount: amount,
+              currency: currency)
     }
 }
