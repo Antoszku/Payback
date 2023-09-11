@@ -10,11 +10,10 @@ extension TransactionsView.TransactionsListView {
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
                         ForEach(viewModel.categories, id: \.self) { category in
-                            Text("\(category)")
-                                .padding(.horizontal)
-                                .padding(.vertical, 4)
-                                .overlay(RoundedRectangle(cornerRadius: 20).stroke(.gray, lineWidth: 1))
-                                .onTapGesture { viewModel.onFilterTap(category) }
+                            Button("\(category)") { viewModel.onFilterTap(category) }
+                            .tint(viewModel.selectedFilter == category ? .blue : .gray)
+                            .controlSize(.regular)
+                            .buttonStyle(.bordered)
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TransactionsView: View {
-    @ObservedObject var viewModel: TransactionsViewModel
+    @StateObject var viewModel: TransactionsViewModel
 
     let viewFactory: TransactionsViewFactory
 
@@ -12,9 +12,9 @@ struct TransactionsView: View {
             case let .transactions(transactions): TransactionsListView(transactions: transactions, viewFactory: viewFactory)
             case .error: TryAgainView()
             }
-        }
-        .onAppear { onAppear() }
-        .environmentObject(viewModel)
+        }.navigationTitle("Transactions")
+            .onFirstAppear { onAppear() }
+            .environmentObject(viewModel)
     }
 
     private func onAppear() {
